@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ADD8E6;
+    color: #212529;
+}
+
+header {
+    background-image: url('https://www.thecocktaildb.com/images/ingredients/ice-Medium.png');
+    background-size: cover;
+    background-position: center;
+    color: #FFA500;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #FF8C00;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#search-form {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#search-form input[type="text"] {
+    padding: 0.7rem;
+    width: 300px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+#search-form button {
+    padding: 0.7rem 1rem;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#search-form button:hover {
+    background-color: #d62839;
+}
+
+#cocktail-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cocktail-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.cocktail-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cocktail-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.cocktail-item h3 {
+    margin: 0;
+    flex-grow: 1;
+    padding-left: 1rem;
+}
+
+.cocktail-details {
+    margin-top: 2rem;
+}
+
+.cocktail-details img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.cocktail-details h2 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.cocktail-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cocktail-details ul li {
+    background-color: #f1f1f1;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}

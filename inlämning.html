@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Drink Library</h1>
+        <p>Discover your next favorite drink</p>
+    </header>
+
+    <nav>
+        <a href="#home" id="home-link">Home</a>
+        <a href="#search" id="search-link">Search</a>
+    </nav>
+
+    <section id="home" style="display: block;">
+        <div id="random-cocktail" style="text-align: center;">
+            <img id="random-cocktail-img" src="" alt="Random Cocktail" style="max-width: 300px; border-radius: 8px;">
+            <h2 id="random-cocktail-name"></h2>
+            <button id="new-cocktail-btn">Get New Cocktail</button>
+            <button id="see-more-btn">See More</button>
+        </div>
+    </section>
+
+    <section id="search" style="display: none;">
+        <div id="search-form">
+            <form>
+                <input type="text" id="search-input" placeholder="Search for a cocktail...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div id="search-results"></div>
+    </section>
+
+    <section id="cocktail-details" style="display: none;">
+        <div class="cocktail-details">
+            <!-- Drink recept visas här -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
